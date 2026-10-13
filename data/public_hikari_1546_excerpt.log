@@ -1,0 +1,3 @@
+2020-02-26 15:58:27.641 ERROR 311 --- [io-8833-exec-89] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, r$quest timed out after 30001ms.
+at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:238) ~[spring-orm-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:183) ~[HikariCP-2.7.9.jar!/:na

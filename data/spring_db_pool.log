@@ -1,0 +1,9 @@
+2026-09-21 10:00:00.000 INFO [gateway] [trace=trace-db-001] HTTP_REQUEST - POST /api/orders request accepted
+2026-09-21 10:00:00.170 INFO [order-service] [trace=trace-db-001] ORDER_CREATE - Creating order id=7319
+2026-09-21 10:00:00.340 ERROR [order-service] [trace=trace-db-001] DB_POOL_EXHAUSTED - HikariPool-1 - Connection is not available, request timed out after 30000ms
+java.sql.SQLTransientConnectionException: connection acquisition timeout
+    at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+    at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:196)
+2026-09-21 10:00:00.510 ERROR [order-service] [trace=trace-db-001] DB_CONNECTION_FAILED - SQLTransientConnectionException while saving order 7319
+2026-09-21 10:00:00.680 ERROR [gateway] [trace=trace-db-001] GATEWAY_5XX - order-service returned HTTP 503 for POST /api/orders
+2026-09-21 10:00:00.850 WARN [gateway] [trace=trace-db-001] CLIENT_RETRY - Client retry scheduled after upstream failure

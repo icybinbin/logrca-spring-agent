@@ -1,0 +1,14 @@
+2026-10-11 10:00:00.000 INFO [gateway] [trace=trial-001] E001 - POST /api/orders request accepted
+2026-10-11 10:00:00.050 ERROR [order-service] [trace=trial-001] E002 - HikariPool-1 - Connection is not available, request timed out after 30000ms; active=10 idle=0 pending=5
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:196)
+2026-10-11 10:00:00.080 ERROR [order-service] [trace=trial-001] E003 - SQLTransientConnectionException unable to acquire database connection
+2026-10-11 10:00:00.100 ERROR [gateway] [trace=trial-001] E004 - POST /api/orders returned 503
+2026-10-11 10:01:00.000 ERROR [auth-service] [trace=trial-002] E005 - Redis connection to redis:6379 refused; io.lettuce.core.RedisConnectionException
+2026-10-11 10:01:00.020 ERROR [auth-service] [trace=trial-002] E006 - Session lookup failed because Redis connection is unavailable
+2026-10-11 10:01:00.050 ERROR [gateway] [trace=trial-002] E007 - GET /api/session returned 503
+2026-10-11 10:02:00.000 ERROR [gateway] [trace=trial-003] E008 - POST /api/orders returned 503; upstream cause not recorded
+2026-10-11 10:02:00.020 WARN [gateway] [trace=trial-003] E009 - Client retried the request; failure origin is unknown
+2026-10-11 10:03:00.000 CRITICAL [widget-service] [trace=trial-004] E010 - Byzantine widget entered an impossible state; no additional diagnostic information
+2026-10-11 10:04:00.000 INFO [gateway] [trace=trial-005] E011 - GET /api/catalog request accepted
+2026-10-11 10:04:00.010 INFO [catalog-service] [trace=trial-005] E012 - Catalog request completed normally
+2026-10-11 10:04:00.015 INFO [gateway] [trace=trial-005] E013 - GET /api/catalog returned 200

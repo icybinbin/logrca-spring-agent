@@ -1,0 +1,3 @@
+pydantic>=2.5,<3
+pytest>=7,<9
+streamlit>=1.32,<2

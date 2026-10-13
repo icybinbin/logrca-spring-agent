@@ -1,0 +1,20 @@
+{
+  "file": "public_hikari_1546_excerpt.log",
+  "source_url": "https://github.com/brettwooldridge/HikariCP/issues/1546",
+  "source_type": "public_issue_report_excerpt",
+  "source_updated_at": "2020-05-13T09:12:31Z",
+  "excerpt_source_body_lines": [
+    39,
+    42,
+    170
+  ],
+  "excerpt_word_count": 25,
+  "sha256": "8ad02d737bb3bdde09156e7c4c9ace1400d0ca24ce8daf09aa334884ffd60b8e",
+  "transformations": [
+    "Select one error line and two existing stack frames, preserving their order.",
+    "Omit other issue text, logs and stack frames.",
+    "Preserve posting typos/truncation; do not invent timestamps, trace IDs or services."
+  ],
+  "confirmed_root_cause": null,
+  "timezone_in_source": "unspecified"
+}

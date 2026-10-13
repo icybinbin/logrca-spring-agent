@@ -1,0 +1,5 @@
+-r requirements.txt
+openai-agents==0.22.3
+# OpenAI 3.x's optional aiohttp transport expects SocketTimeoutError, which is
+# absent from the older aiohttp bundled in some Anaconda installations.
+aiohttp>=3.12,<4
