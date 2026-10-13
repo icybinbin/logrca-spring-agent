@@ -11,8 +11,7 @@ FILES = {
     "requirements-openai.txt", "streamlit_app.py", "run_web.py", "run_demo.py",
     "run_stage1.py", "agent_core.py", "log_tools.py",
     "examples/deepseek_agent_demo.py", "examples/deepseek_connection_check.py",
-    "docs/ARCHITECTURE.md", "docs/EVALUATION.md", "docs/P0_COMPLETION.md", "docs/DATA_SOURCES.md",
-    "docs/LEARNING_GUIDE.md", "docs/INTERVIEW_GUIDE.md", "docs/PROJECT_PLAN.md", "docs/PRODUCTION.md",
+    "docs/ARCHITECTURE.md", "docs/EVALUATION.md", "docs/DATA_SOURCES.md",
     "docs/PUBLIC_SAMPLES.md", "data/public_hikari_1546_source.json",
 }
 PATTERNS = ("logrca/*.py", "tests/*.py", "scripts/*.py", "data/*.log", "data/*.jsonl", ".github/workflows/*.yml")
